@@ -1,5 +1,4 @@
-#Initial attempt at simulating radial velosity curves for exoplanet detection 
-#Using the equations and theory from the planetary system dynamics example sheet 
+#Initial attempt at simulating radial velosity curves for exoplanet detection  
 
 # Ideally store a dictionary for each white dwarf
 #Then reference each value in the dictionary so the formula is interchangeable
@@ -10,17 +9,18 @@ from fractions import Fraction
 
 # Constants
 G = 6.67430e-11         # Gravitational constant (m^3/kg/s^2)
-Mwd = 0.6* 2e30    # Mass of the star (in kilograms)
-Mpl = 9.26 * 1.898e27         # Mass of the planet (in kilograms)
+Mwd = 0.6* 2e30         # Mass of the star (in kilograms)
+Mpl = 9.26 * 1.898e27   # Mass of the planet (in kilograms)
 au = 149597870700
 #asun = 2*au
 a = 0 #placeholder for a
 
 period = 33.65 * 24 *3600    # Orbital period of the planet (in seconds)
 
-e = 0                # Eccentricity of the planet's orbit
-i =  87              #inclination of the orbital plane to the true sky
-omega = 0    #argument of pericenter chosen at 0 - leads to no eccentricities
+e = 0                    # Eccentricity of the planet's orbit
+omega = 0                #argument of pericenter chosen at 0 - leads to no eccentricities
+
+i =  87                  #inclination of the orbital plane to the true sky
 
 # Time range
 t = np.linspace(0, 2* period, 1000)
@@ -114,5 +114,5 @@ for ax in axs.flat:
 plt.tight_layout()
 plt.grid()
 
-plt.savefig("/Users/macintosh/Desktop/Cambridge/Course/Research_Project/Coding/graphs/RadVel.png")
+plt.savefig("")
 plt.show()
