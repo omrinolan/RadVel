@@ -1,21 +1,12 @@
 # Radial Velocity fitting on Polluted White Dwarf stars
 
-## Table of Contents
-- [Description](#This is a )
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Contributing](#contributing)
-- [License](#license)
-- [Authors](#authors)
 
 ## Description
-This is a project that I undetook as my Masters Research Project at the University of Cambridge in 2024. It's purpose was to investigate methods to precisely determine the radial velocity of polluted white dwarf stars.
+This is a project that I undetook as my Masters Research Project at the University of Cambridge in 2024. Its purpose was to investigate methods to precisely determine the radial velocity of polluted white dwarf stars.
+
 The dataset included data from 6 different host stars, GD133, GD29-38, GD56-04, HE0106-3253, WD1457-086, and WD1929+011.
-The data is taken from two different telescopes with high resolution spectroscopes, the SALT HRS (referred to as SALT), and the Magellan MIKE (referred to as MIKE).
-The project involves importing and processing the data, and then running four different approaches in order to precisely determine the radial velocity shift of each individual timestamp measurement. 
-The code then creates a timeseries of the individual measurements of the radial velocity and analyses this data with a periodogram to see if there is any periodic variability.
-If there is no periodic variability, the spread of the data is taken to be the precision of the measurement.
+The data is taken from two different telescopes with high resolution spectroscopes, the SALT HRS (referred to as SALT), and the Magellan MIKE (referred to as MIKE). The project involves importing and processing the data, and then running four different approaches in order to precisely determine the radial velocity shift of each individual timestamp measurement. 
+The code then creates a timeseries of the individual measurements of the radial velocity and analyses this data with a periodogram to see if there is any periodic variability. If there is no periodic variability, the spread of the data is taken to be the precision of the measurement.
 This project is intended to make use of the narrow pollutant lines present in the spectra of polluted white dwarfs, and to test if they can be used for precise radial velocity measurements. White dwarfs have historically been ruled out for radial velocity measurements due to smooth featureless spectra, but this project shows that this method can detect hot jupiter planets orbiting on close-in orbits around host stars.
 
 The four different approaches are as follows:
