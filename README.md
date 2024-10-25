@@ -28,7 +28,7 @@ There are also numerous plotting files that I have created, in rv_plotting.py an
 ## Installation
 Steps required to install the project and its dependencies.
 
-data is found on the Cambridge IoA cluster at /data/wdplanetary/laura/
+data is found on the Cambridge IoA cluster
 The data is in standard MIDAS pipeline format, and as such, any data made with a similar pipeline should be useable with minor adaptations.
 Adaptions may be needed to use data in different formats
 
